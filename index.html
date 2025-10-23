@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="TCMA - They Call Me Alan. Potencia tus ventas al menos un 200% con servicios de diseño y desarrollo web profesional.">
+    <meta name="keywords" content="diseño web, desarrollo, portafolio, servicios digitales">
+    <title>TCMA - They Call Me Alan</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <script src="logica.js" defer></script> 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+        
+    
+</head>
+<body>
+    <!-- Navigation -->
+    <nav>
+        <a href="#" class="logo">TCMA</a>
+        <div class="nav-links" id="navLinks">
+            <a href="#inicio">Inicio</a>
+            <a href="#acerca">Acerca de</a>
+            <a href="#portafolio">Portafolio</a>
+            <a href="#servicios">Servicios</a>
+            <a href="#contacto">Contacto</a>
+            <button class="admin-btn" onclick="openAdmin()">Administrar</button>
+        </div>
+        <div class="menu-toggle" onclick="toggleMenu()">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </nav>
+
+    <!-- Header/Hero -->
+    <header class="header" id="inicio">
+        <div class="hero">
+            <h1>THEY CALL ME ALAN</h1>
+            <h2>Potencia tus ventas al menos un 200%</h2>
+        </div>
+    </header>
+
+    <!-- About Section -->
+    <section class="container" id="acerca">
+        <h2 class="section-title">Vehículo de Exhibición</h2>
+        <div class="about-content">
+            <div class="about-image">
+                <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 800 600'%3E%3Crect fill='%2316a34a' width='800' height='600'/%3E%3Ctext x='50%25' y='50%25' font-size='24' fill='white' text-anchor='middle' dominant-baseline='middle'%3EBugatti Chiron%3C/text%3E%3C/svg%3E" alt="Bugatti Chiron">
+            </div>
+            <div class="about-text">
+                <h3><span>1</span>Bugatti Chiron</h3>
+                <p>El Bugatti Chiron es un automóvil superdeportivo cupé de dos puertas biplaza, con motor central-trasero montado longitudinalmente y de tracción integral. Representa la excelencia en ingeniería automotriz.</p>
+                <h3><span>2</span>Diseño Excepcional</h3>
+                <p>Su diseño es similar al prototipo presentado en el Salón del Automóvil de Fráncfort. Es un coche muy bajo con unas ópticas LED de un aspecto más agresivo y maduro que el Veyron, mostrando evolución y refinamiento.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section class="portfolio" id="portafolio">
+        <div class="container">
+            <h2 class="section-title">Portafolio</h2>
+            <div class="gallery">
+                <div class="gallery-item">
+                    <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 400 300'%3E%3Crect fill='%2315803d' width='400' height='300'/%3E%3Ctext x='50%25' y='50%25' font-size='18' fill='white' text-anchor='middle' dominant-baseline='middle'%3EProyecto 1%3C/text%3E%3C/svg%3E" alt="Proyecto 1">
+                    <div class="gallery-overlay">
+                        <svg viewBox="0 0 24 24" fill="none"><path d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" stroke="currentColor" stroke-width="2"/><path d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z" stroke="currentColor" stroke-width="2"/></svg>
+                        <p>Nuestro Trabajo</p>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 400 300'%3E%3Crect fill='%2316a34a' width='400' height='300'/%3E%3Ctext x='50%25' y='50%25' font-size='18' fill='white' text-anchor='middle' dominant-baseline='middle'%3EProyecto 2%3C/text%3E%3C/svg%3E" alt="Proyecto 2">
+                    <div class="gallery-overlay">
+                        <svg viewBox="0 0 24 24" fill="none"><path d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" stroke="currentColor" stroke-width="2"/><path d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z" stroke="currentColor" stroke-width="2"/></svg>
+                        <p>Nuestro Trabajo</p>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 400 300'%3E%3Crect fill='%234ade80' width='400' height='300'/%3E%3Ctext x='50%25' y='50%25' font-size='18' fill='white' text-anchor='middle' dominant-baseline='middle'%3EProyecto 3%3C/text%3E%3C/svg%3E" alt="Proyecto 3">
+                    <div class="gallery-overlay">
+                        <svg viewBox="0 0 24 24" fill="none"><path d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" stroke="currentColor" stroke-width="2"/><path d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z" stroke="currentColor" stroke-width="2"/></svg>
+                        <p>Nuestro Trabajo</p>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 400 300'%3E%3Crect fill='%2315803d' width='400' height='300'/%3E%3Ctext x='50%25' y='50%25' font-size='18' fill='white' text-anchor='middle' dominant-baseline='middle'%3EProyecto 4%3C/text%3E%3C/svg%3E" alt="Proyecto 4">
+                    <div class="gallery-overlay">
+                        <svg viewBox="0 0 24 24" fill="none"><path d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" stroke="currentColor" stroke-width="2"/><path d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z" stroke="currentColor" stroke-width="2"/></svg>
+                        <p>Nuestro Trabajo</p>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 400 300'%3E%3Crect fill='%2316a34a' width='400' height='300'/%3E%3Ctext x='50%25' y='50%25' font-size='18' fill='white' text-anchor='middle' dominant-baseline='middle'%3EProyecto 5%3C/text%3E%3C/svg%3E" alt="Proyecto 5">
+                    <div class="gallery-overlay">
+                        <svg viewBox="0 0 24 24" fill="none"><path d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" stroke="currentColor" stroke-width="2"/><path d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z" stroke="currentColor" stroke-width="2"/></svg>
+                        <p>Nuestro Trabajo</p>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 400 300'%3E%3Crect fill='%234ade80' width='400' height='300'/%3E%3Ctext x='50%25' y='50%25' font-size='18' fill='white' text-anchor='middle' dominant-baseline='middle'%3EProyecto 6%3C/text%3E%3C/svg%3E" alt="Proyecto 6">
+                    <div class="gallery-overlay">
+                        <svg viewBox="0 0 24 24" fill="none"><path d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" stroke="currentColor" stroke-width="2"/><path d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z" stroke="currentColor" stroke-width="2"/></svg>
+                        <p>Nuestro Trabajo</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="container">
+        <h2 class="section-title">Qué Dicen Nuestros Clientes</h2>
+        <div class="testimonials">
+            <div class="testimonial-card">
+                <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ccircle cx='50' cy='50' r='50' fill='%2316a34a'/%3E%3Ctext x='50%25' y='55%25' font-size='40' fill='white' text-anchor='middle' dominant-baseline='middle'%3ELM%3C/text%3E%3C/svg%3E" alt="Leo Messi">
+                <h4>Leo Messi</h4>
+                <p>"Excelente trabajo, superó todas mis expectativas. Muy profesional."</p>
+            </div>
+            <div class="testimonial-card">
+                <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ccircle cx='50' cy='50' r='50' fill='%234ade80'/%3E%3Ctext x='50%25' y='55%25' font-size='40' fill='white' text-anchor='middle' dominant-baseline='middle'%3EHQ%3C/text%3E%3C/svg%3E" alt="Cliente">
+                <h4>María González</h4>
+                <p>"Increíble calidad y atención al detalle. Totalmente recomendado."</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services -->
+    <section class="services" id="servicios">
+        <div class="container">
+            <h2 class="section-title">Nuestros Servicios</h2>
+            <div class="services-grid">
+                <div class="service-card">
+                    <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 400 200'%3E%3Crect fill='%2316a34a' width='400' height='200'/%3E%3Cpath d='M200 60 L240 100 L200 140 L160 100 Z' fill='white'/%3E%3Ctext x='50%25' y='180' font-size='16' fill='white' text-anchor='middle'%3EMantenimiento%3C/text%3E%3C/svg%3E" alt="Mantenimiento">
+                    <h3>Mantenimiento Profesional</h3>
+                    <p>Ofrecemos servicios de mantenimiento, pinturas y reparaciones de alta calidad para mantener tu inversión en perfecto estado.</p>
+                </div>
+                <div class="service-card">
+                    <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 400 200'%3E%3Crect fill='%234ade80' width='400' height='200'/%3E%3Ccircle cx='200' cy='90' r='40' fill='white'/%3E%3Crect x='180' y='130' width='40' height='30' fill='white'/%3E%3Ctext x='50%25' y='180' font-size='16' fill='white' text-anchor='middle'%3EDesarrollo Web%3C/text%3E%3C/svg%3E" alt="Desarrollo">
+                    <h3>Desarrollo Digital</h3>
+                    <p>Creamos experiencias digitales excepcionales optimizadas para dispositivos móviles como proyecto de vanguardia.</p>
+                </div>
+                <div class="service-card">
+                    <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 400 200'%3E%3Crect fill='%2315803d' width='400' height='200'/%3E%3Cpolygon points='200,50 250,90 230,140 170,140 150,90' fill='white'/%3E%3Ctext x='50%25' y='180' font-size='16' fill='white' text-anchor='middle'%3EConsultorÃ­a%3C/text%3E%3C/svg%3E" alt="Consultoría">
+                    <h3>Consultoría Especializada</h3>
+                    <p>Asesoramiento experto para optimizar tus procesos y potenciar tus ventas al máximo nivel posible.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer id="contacto">
+        <div class="footer-content">
+            <div class="footer-item">
+                <h4>Teléfono</h4>
+                <p>849-624-0934</p>
+            </div>
+            <div class="footer-item">
+                <h4>E-mail</h4>
+                <p>allanmanuelcampusanoflorentino@gmail.com</p>
+            </div>
+            <div class="footer-item">
+                <h4>Ubicación</h4>
+                <p>Santo Domingo, República Dominicana</p>
+            </div>
+        </div>
+        <p class="copyright">&copy; 2024 AllanManuel - TCMA. Todos los derechos reservados.</p>
+    </footer>
+
+    <!-- Admin Modal -->
+    <div id="adminModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeAdmin()">&times;</span>
+            <h2>Panel de Administración</h2>
+            <form id="loginForm" onsubmit="handleLogin(event)">
+                <input type="text" placeholder="Usuario" required>
+                <input type="password" placeholder="Contraseña" required>
+                <button type="submit">Iniciar Sesión</button>
+            </form>
+        </div>
+    </div>
+
+    
+</body>
+</html>
